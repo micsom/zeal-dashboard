@@ -151,11 +151,11 @@ export default function ZealDeployDashboard() {
         </motion.div>
       </section>
       <AnimatePresence>{done && <Confetti />}</AnimatePresence>
-      <audio ref={audioRef} src="/ding.mp3" preload="auto" />
+      <audio ref={audioRef} src="/public/ding.mp3" preload="auto" />
       <footer className="absolute left-0 right-0 bottom-0 flex items-center justify-between p-5">
         <span className="text-zinc-500 text-sm">&copy; {new Date().getFullYear()} Somcro & Zeal Deploy</span>
         <div className="flex items-center gap-2">
-          <img src="/zeal.svg" alt="Zeal Mini" className="w-7 h-7" />
+          <img src="/public/zeal.svg" alt="Zeal Mini" className="w-7 h-7" />
           <span className="text-xs text-purple-700 font-bold tracking-wide">Zeal of Approval</span>
         </div>
       </footer>
